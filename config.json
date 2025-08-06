@@ -3,23 +3,18 @@
     "specificItems": {
         "enabled": false,
         "sendingItems": [
-            "ITEM_ID_1",
-            "ITEM_ID_2"
         ],
         "receivingItems": [
-            "ITEM_ID_3",
-            "ITEM_ID_4"
         ],
         "tags": [
-            "exampleTag"
         ],
         "_tagOptions": ["adds", "upgrade", "downgrade", "any", "wishlist", "demand", "rares", "rap", "robux", "projecteds"]
     },
     "smartAlgo": {
         "enabled": true,
         "upgrade": false,
-        "downgrade": false,
-        "any": true,
+        "downgrade": true,
+        "any": false,
         "minSendItems": 3,
         "maxSendItems": 4,
         "minReceiveItems": 2,
