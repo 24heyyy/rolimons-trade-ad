@@ -1,28 +1,25 @@
-{
-    "chosingAlgorithm": "Specific Items will post ONLY what you tell it to, same ad every time. Smart algo generates an ad. You can ONLY enable one, specific or smart. For support join https://discord.gg/M58R3PR9Wv",
-    "specificItems": {
-        "enabled": false,
-        "sendingItems": [
-        ],
-        "receivingItems": [
-        ],
-        "tags": [
-        ],
-        "_tagOptions": ["adds", "upgrade", "downgrade", "any", "wishlist", "demand", "rares", "rap", "robux", "projecteds"]
-    },
-    "smartAlgo": {
+[
+  {
+    "name": "Account1",
+    "robloxId": 123456,
+    "rolimonsToken": "TOKEN1",
+    "config": {
+      "specificItems": {
         "enabled": true,
+        "sendingItems": [11111, 22222],
+        "receivingItems": [33333],
+        "tags": ["adds"]
+      },
+      "smartAlgo": {
+        "enabled": false,
         "upgrade": false,
-        "downgrade": true,
+        "downgrade": false,
         "any": false,
         "minSendItems": 1,
         "maxSendItems": 4,
-        "minReceiveItems": 2,
+        "minReceiveItems": 1,
         "maxReceiveItems": 4,
-        "blacklisted": [
-            "BLACKLISTED_ITEM_ID_1",
-            "BLACKLISTED_ITEM_ID_2"
-        ],
+        "blacklisted": [],
         "minTotalSend": 0,
         "maxTotalSend": 1000000,
         "minTotalRequestValue": 0,
@@ -34,9 +31,44 @@
         "minDemand": 0,
         "minItemValueSend": 0,
         "minItemValueRequest": 0,
-        "tags": [
-            "adds"
-        ],
-        "_tagOptions": ["adds", "upgrade", "downgrade", "any", "wishlist", "demand", "rares", "rap", "robux", "projecteds"]
+        "tags": ["adds"]
+      }
     }
-}
+  },
+  {
+    "name": "Account2",
+    "robloxId": 654321,
+    "rolimonsToken": "TOKEN2",
+    "config": {
+      "specificItems": {
+        "enabled": false,
+        "sendingItems": [],
+        "receivingItems": [],
+        "tags": []
+      },
+      "smartAlgo": {
+        "enabled": true,
+        "upgrade": true,
+        "downgrade": false,
+        "any": false,
+        "minSendItems": 1,
+        "maxSendItems": 3,
+        "minReceiveItems": 1,
+        "maxReceiveItems": 3,
+        "blacklisted": ["BLACKLISTED_ITEM_ID_1"],
+        "minTotalSend": 0,
+        "maxTotalSend": 1000000,
+        "minTotalRequestValue": 0,
+        "maxTotalRequestValue": 1000000000,
+        "minUpgPercent": 7,
+        "maxUpgPercent": 12,
+        "minDgPercent": 0,
+        "maxDgPercent": 4,
+        "minDemand": 0,
+        "minItemValueSend": 0,
+        "minItemValueRequest": 0,
+        "tags": ["upgrade"]
+      }
+    }
+  }
+]
